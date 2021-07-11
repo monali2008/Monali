@@ -2,12 +2,16 @@ package org.testing.assertions;
 
 public class Assert_1 {
 	
-	public static void assertion1(int actual,int expected)
+	public static boolean assertion1(int actual,int expected)
 	{
-		if(actual==expected)
+		if(actual==expected) {
 			System.out.println("Assertion is passed");
-		else
+			return true;
+		}
+		else {
 			System.out.println("Assertion is failed");
+			return false;
+		}
 	}
 	
 	

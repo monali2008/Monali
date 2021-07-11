@@ -7,10 +7,10 @@ import io.restassured.response.Response;
 
 public class ValidateResponse {
 	
-	public static void statusCodeValidate(Response rs,int expectedStatusCode)
+	public static boolean statusCodeValidate(Response rs,int expectedStatusCode)
 	{
 		int actualStatusCode=rs.statusCode();
-		Assert_1.assertion1(actualStatusCode, expectedStatusCode);
+		return Assert_1.assertion1(actualStatusCode, expectedStatusCode);
 	}
 	
 	public static void dataValidate(Response rs,String jsonPath,String expectedData)
