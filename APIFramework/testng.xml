@@ -13,6 +13,8 @@
       <class name="org.testing.testcases.TC08_GetAllReq_Req"/>
       <class name="org.testing.testcases.TC09_PutReq_req"/>
       <class name="org.testing.testcases.TC10_DeleteReq_Req"/>
+      <class name="org.testing.testcases.TC11_PostTwittOnTwitter"/>
+      <class name="org.testing.testcases.TC12_GetTwittFromTwitter"/>
    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

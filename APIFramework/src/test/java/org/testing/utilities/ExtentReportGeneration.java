@@ -6,7 +6,7 @@ public class ExtentReportGeneration {
 	
 	public static ExtentReports reportGenerate()
 	{
-		ExtentReports extent = new ExtentReports("../APIFramework/Reports/testReport.html", false);
+		ExtentReports extent = new ExtentReports("../APIFramework/Reports/ReportTest.html", false);
 		return extent;
 	}
 

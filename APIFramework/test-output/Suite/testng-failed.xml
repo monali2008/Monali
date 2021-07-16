@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="org.testing.testcases.TC05_DeleteReq">
+      <class name="org.testing.testcases.TC12_GetTwittFromTwitter">
         <methods>
-          <include name="fifthTestCase"/>
+          <include name="twelvethTestCase"/>
         </methods>
-      </class> <!-- org.testing.testcases.TC05_DeleteReq -->
+      </class> <!-- org.testing.testcases.TC12_GetTwittFromTwitter -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

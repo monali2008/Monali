@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testing.testcases.TC05_DeleteReq" hash-for-method="fifthTestCase">fifthTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +103,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testing.testcases.TC08_GetAllReq_Req" hash-for-method="eightTestCase">eightTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testing.testcases.TC11_PostTwittOnTwitter" hash-for-method="eleventhTestCase">eleventhTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testing.testcases.TC05_DeleteReq" hash-for-method="fifthTestCase">fifthTestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,6 +155,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testing.testcases.TC03_GetAllReq" hash-for-method="thirdTestCase">thirdTestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testing.testcases.TC12_GetTwittFromTwitter" hash-for-method="twelvethTestCase">twelvethTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -171,121 +172,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.testing.testcases.TC05_DeleteReq</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="fifthTestCase">
-                  </a> <!-- fifthTestCase -->
-                  <span class="method-name">fifthTestCase</span>
-                  <div class="stack-trace">org.apache.http.NoHttpResponseException: localhost:3000 failed to respond
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
-	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
-	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:209)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:686)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:488)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2028)
-	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
-	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
-	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1434)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1221)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1631)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1637)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy:178)
-	at io.restassured.internal.RequestSpecificationImpl.delete(RequestSpecificationImpl.groovy)
-	at org.testing.teststeps.HTTPMethods.DeleteRequest(HTTPMethods.java:70)
-	at org.testing.testcases.TC05_DeleteReq.fifthTestCase(TC05_DeleteReq.java:20)
-... Removed 45 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.testing.testcases.TC04_PutReq</span>
+              <span class="class-name">org.testing.testcases.TC09_PutReq_req</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fourthTestCase">
-                  </a> <!-- fourthTestCase -->
-                  <span class="method-name">fourthTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.testing.testcases.TC03_GetAllReq</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="thirdTestCase">
-                  </a> <!-- thirdTestCase -->
-                  <span class="method-name">thirdTestCase</span>
+                  <a name="ninethTestCase">
+                  </a> <!-- ninethTestCase -->
+                  <span class="method-name">ninethTestCase</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -308,44 +205,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.testing.testcases.TC10_DeleteReq_Req</span>
+              <span class="class-name">org.testing.testcases.TC11_PostTwittOnTwitter</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tenthTestCase">
-                  </a> <!-- tenthTestCase -->
-                  <span class="method-name">tenthTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.testing.testcases.TC02_GetReq</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="secondTestCase">
-                  </a> <!-- secondTestCase -->
-                  <span class="method-name">secondTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.testing.testcases.TC07_GetReq_Req</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="seventhTestCase">
-                  </a> <!-- seventhTestCase -->
-                  <span class="method-name">seventhTestCase</span>
+                  <a name="eleventhTestCase">
+                  </a> <!-- eleventhTestCase -->
+                  <span class="method-name">eleventhTestCase</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -368,6 +235,96 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">org.testing.testcases.TC12_GetTwittFromTwitter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="twelvethTestCase">
+                  </a> <!-- twelvethTestCase -->
+                  <span class="method-name">twelvethTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.testcases.TC07_GetReq_Req</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="seventhTestCase">
+                  </a> <!-- seventhTestCase -->
+                  <span class="method-name">seventhTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.testcases.TC10_DeleteReq_Req</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tenthTestCase">
+                  </a> <!-- tenthTestCase -->
+                  <span class="method-name">tenthTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.testcases.TC03_GetAllReq</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="thirdTestCase">
+                  </a> <!-- thirdTestCase -->
+                  <span class="method-name">thirdTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.testcases.TC04_PutReq</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fourthTestCase">
+                  </a> <!-- fourthTestCase -->
+                  <span class="method-name">fourthTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testing.testcases.TC05_DeleteReq</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fifthTestCase">
+                  </a> <!-- fifthTestCase -->
+                  <span class="method-name">fifthTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">org.testing.testcases.TC08_GetAllReq_Req</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -383,14 +340,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.testing.testcases.TC09_PutReq_req</span>
+              <span class="class-name">org.testing.testcases.TC02_GetReq</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ninethTestCase">
-                  </a> <!-- ninethTestCase -->
-                  <span class="method-name">ninethTestCase</span>
+                  <a name="secondTestCase">
+                  </a> <!-- secondTestCase -->
+                  <span class="method-name">secondTestCase</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -417,6 +374,8 @@
       &lt;class name=&quot;org.testing.testcases.TC08_GetAllReq_Req&quot;/&gt;
       &lt;class name=&quot;org.testing.testcases.TC09_PutReq_req&quot;/&gt;
       &lt;class name=&quot;org.testing.testcases.TC10_DeleteReq_Req&quot;/&gt;
+      &lt;class name=&quot;org.testing.testcases.TC11_PostTwittOnTwitter&quot;/&gt;
+      &lt;class name=&quot;org.testing.testcases.TC12_GetTwittFromTwitter&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -430,7 +389,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (10 classes)</span>
+                <span class="test-name">Test (12 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -456,52 +415,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sixthTestCase')
-data.setCell(0, 2, 'org.testing.testcases.TC06_PostReq_Req')
-data.setCell(0, 3, 2943);
+data.setCell(0, 1, 'firstTestCase')
+data.setCell(0, 2, 'org.testing.testcases.TC01_PostReq')
+data.setCell(0, 3, 1960);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'firstTestCase')
-data.setCell(1, 2, 'org.testing.testcases.TC01_PostReq')
-data.setCell(1, 3, 1452);
+data.setCell(1, 1, 'eleventhTestCase')
+data.setCell(1, 2, 'org.testing.testcases.TC11_PostTwittOnTwitter')
+data.setCell(1, 3, 1725);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tenthTestCase')
-data.setCell(2, 2, 'org.testing.testcases.TC10_DeleteReq_Req')
-data.setCell(2, 3, 1426);
+data.setCell(2, 1, 'sixthTestCase')
+data.setCell(2, 2, 'org.testing.testcases.TC06_PostReq_Req')
+data.setCell(2, 3, 1448);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ninethTestCase')
-data.setCell(3, 2, 'org.testing.testcases.TC09_PutReq_req')
-data.setCell(3, 3, 1209);
+data.setCell(3, 1, 'twelvethTestCase')
+data.setCell(3, 2, 'org.testing.testcases.TC12_GetTwittFromTwitter')
+data.setCell(3, 3, 1283);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'eightTestCase')
-data.setCell(4, 2, 'org.testing.testcases.TC08_GetAllReq_Req')
-data.setCell(4, 3, 937);
+data.setCell(4, 1, 'ninethTestCase')
+data.setCell(4, 2, 'org.testing.testcases.TC09_PutReq_req')
+data.setCell(4, 3, 1066);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'seventhTestCase')
-data.setCell(5, 2, 'org.testing.testcases.TC07_GetReq_Req')
-data.setCell(5, 3, 712);
+data.setCell(5, 1, 'tenthTestCase')
+data.setCell(5, 2, 'org.testing.testcases.TC10_DeleteReq_Req')
+data.setCell(5, 3, 896);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'fourthTestCase')
-data.setCell(6, 2, 'org.testing.testcases.TC04_PutReq')
-data.setCell(6, 3, 69);
+data.setCell(6, 1, 'eightTestCase')
+data.setCell(6, 2, 'org.testing.testcases.TC08_GetAllReq_Req')
+data.setCell(6, 3, 620);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'secondTestCase')
-data.setCell(7, 2, 'org.testing.testcases.TC02_GetReq')
-data.setCell(7, 3, 65);
+data.setCell(7, 1, 'seventhTestCase')
+data.setCell(7, 2, 'org.testing.testcases.TC07_GetReq_Req')
+data.setCell(7, 3, 535);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'thirdTestCase')
-data.setCell(8, 2, 'org.testing.testcases.TC03_GetAllReq')
-data.setCell(8, 3, 60);
+data.setCell(8, 1, 'secondTestCase')
+data.setCell(8, 2, 'org.testing.testcases.TC02_GetReq')
+data.setCell(8, 3, 289);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'fifthTestCase')
-data.setCell(9, 2, 'org.testing.testcases.TC05_DeleteReq')
-data.setCell(9, 3, 26);
+data.setCell(9, 1, 'thirdTestCase')
+data.setCell(9, 2, 'org.testing.testcases.TC03_GetAllReq')
+data.setCell(9, 3, 136);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'fourthTestCase')
+data.setCell(10, 2, 'org.testing.testcases.TC04_PutReq')
+data.setCell(10, 3, 133);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'fifthTestCase')
+data.setCell(11, 2, 'org.testing.testcases.TC05_DeleteReq')
+data.setCell(11, 3, 114);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -537,65 +504,77 @@ return data;
               <div class="chronological-class-name">org.testing.testcases.TC02_GetReq</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">secondTestCase</span>
-                <span class="method-start">1454 ms</span>
+                <span class="method-start">1965 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC03_GetAllReq</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">thirdTestCase</span>
-                <span class="method-start">1520 ms</span>
+                <span class="method-start">2259 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC04_PutReq</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">fourthTestCase</span>
-                <span class="method-start">1582 ms</span>
+                <span class="method-start">2398 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC05_DeleteReq</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">fifthTestCase</span>
-                <span class="method-start">1656 ms</span>
+                <span class="method-start">2538 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC06_PostReq_Req</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">sixthTestCase</span>
-                <span class="method-start">1701 ms</span>
+                <span class="method-start">2659 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC07_GetReq_Req</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">seventhTestCase</span>
-                <span class="method-start">4648 ms</span>
+                <span class="method-start">4123 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC08_GetAllReq_Req</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">eightTestCase</span>
-                <span class="method-start">5362 ms</span>
+                <span class="method-start">4662 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC09_PutReq_req</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">ninethTestCase</span>
-                <span class="method-start">6303 ms</span>
+                <span class="method-start">5289 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testing.testcases.TC10_DeleteReq_Req</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tenthTestCase</span>
-                <span class="method-start">7513 ms</span>
+                <span class="method-start">6365 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.testing.testcases.TC11_PostTwittOnTwitter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">eleventhTestCase</span>
+                <span class="method-start">7275 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.testing.testcases.TC12_GetTwittFromTwitter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">twelvethTestCase</span>
+                <span class="method-start">9003 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
